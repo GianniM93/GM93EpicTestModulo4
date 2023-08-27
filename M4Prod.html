@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="M4Test.css">
+    <title>M4ProdPage</title>
+</head>
+<body>
+  
+  <header>
+    <h1 id="page-title">Your Product!</h1>
+    <button class="btn btn-success mb-3" onclick="goBack()">Let's GO Back</button>
+    <button class="btn btn-danger mb-3" onclick="deleteitem()">Delete Item</button>
+    <button class="btn btn-primary mb-3" onclick="edititem()">Update Item</button>
+  </header>
+
+  <div class="table-container">
+  <table class="table">
+      <thead>
+        <tr class="table-dark">
+          <th class="d-none">ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Brand</th>
+          <th>Image</th>
+          <th>Price($)</th>
+        </tr>
+      </thead>
+
+    <tbody id="items-table-body2">
+    </tbody>
+    </table>
+    </div>
+<script src="./bootstrap/js/bootstrap.bundle.js"></script>
+<script src="./M4Prod.js"></script>  
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="M4Test.css">
+    <title>M4FrontPage</title>
+</head>
+<body>
+
+  <div id="alert-container" class="alert alert-success d-none" role="alert"></div>
+
+  <header>
+    <h1 class="resource-title">ITEMS</h1>
+    <button class="btn btn-success mb-3" onclick="addItems()">New Item</button>
+  </header>
+
+  <div class="table-container">
+
+    <table class="table table-hover">
+
+      <thead>
+        <tr>
+          <th class="d-none">ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Brand</th>
+          <th>Image</th>
+          <th>Price($)</th>
+        </tr>
+      </thead>
+
+    <tbody id="items-table-body">
+    </tbody>
+    </table>
+
+    <div class="spinner-container">
+      <div id="spinner-row" class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    </div>
+      <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+      <script src="./M4Front.js"></script> 
+</body>
+</html>

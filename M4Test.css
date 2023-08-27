@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img {
+    width: 150px;
+    height: 100px;
+  }
+  a {
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  button {
+    width: 100px;
+  }

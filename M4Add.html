@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="M4Test.css">
+
+    <title>M4AddItems</title>
+
+  </head>
+
+  <body>
+    
+    <header>
+      <h1 id="page-title" class="resource-title"></h1>
+      <button class="btn btn-success mb-3" onclick="goBack()">Let's GO Back</button>
+    </header>
+
+    <div class="container">
+
+      <div class="spinner-container">
+        <div id="spinner-row" class="spinner-border" role="status">
+          <span class="visually-hidden">Caricamento...</span>
+        </div>
+      </div> 
+
+      <form id="item-form" class="d-none" novalidate>
+
+       <input type="hidden" id="item-Id">
+
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+          <span class="text-danger" id="name-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <input type="text" class="form-control" id="description" required>
+          <span class="text-danger" id="description-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="brand" class="form-label">Brand</label>
+          <input type="text" class="form-control" id="brand" required>
+          <span class="text-danger" id="brand-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="imageUrl" class="form-label">Image</label>
+          <input type="text" class="form-control" id="imageUrl" required>
+          <span class="text-danger" id="imageUrl-error"></span>
+        </div>
+        
+        <div class="mb-3">
+          <label for="price" class="form-label">Price($)</label>
+          <input type="text" class="form-control" id="price" required>
+          <span class="text-danger" id="price-error"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+
+      </form>
+
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./M4Add.js"></script>    
+  </body>
+
+</html>
